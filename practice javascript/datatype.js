@@ -12,4 +12,4 @@
 // object
 
 console.log(typeof undefined); //output = undefined
-console.log(typeof null);
+console.log(typeof null);  //output= object
