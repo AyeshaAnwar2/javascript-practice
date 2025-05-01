@@ -161,3 +161,16 @@ let fulname = "Ayesha"
 for(let val of fulname){
     console.log(val);
 }
+
+// find the sum of whole array usinng forEach loop in functin or array
+
+let qrr= [2,4,6,8,10]
+function getsum(qrr){
+    let sum=0;
+    qrr.forEach((value)=>{
+        sum  = sum + value;
+    })
+    return sum;
+}
+let totalsum = getsum(qrr);
+console.log(totalsum)
