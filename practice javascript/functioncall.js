@@ -46,3 +46,11 @@ hello();
 
 
 // how to return functon
+function solve(){
+    return function (number){
+        return number*number;
+    }
+}
+    let ans5 = solve();
+    let finalans = ans5(10);
+    console.log(finalans);
