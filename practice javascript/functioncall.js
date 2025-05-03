@@ -51,6 +51,30 @@ function solve(){
         return number*number;
     }
 }
-    let ans5 = solve();
-    let finalans = ans5(10);
+    let ansto = solve();
+    let finalans = ansto(10);
     console.log(finalans);
+
+    // store function in data structure(in array)
+    const array = [
+        function (a,b){
+            return a + b;
+        },
+        function (a,b){
+            return a - b;
+        },
+         function (a,b){
+            return a*b;
+         }
+    ];
+    let firstans = array[0];
+    let arrayans = firstans(3,6);
+    console.log(arrayans);
+
+    let secondans = array[1];
+    let arrayans2 = secondans(3,6);
+    console.log(arrayans2);
+
+    let thirdans = array[2];
+    let arrayans3 = thirdans(3,6);
+    console.log(arrayans3);
