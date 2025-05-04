@@ -44,7 +44,17 @@ console.log(table);
 // console.log(mychair);
 
 // const will also not call the function outside
-{
-    const odd = 3;
-}
-  console.log(odd);
+// {
+//     const odd = 3;
+// }
+//   console.log(odd);
+
+
+
+//   temporal dead zone
+/*
+         tempooral dead zone means we can not access the value or variable before its declaration if it is 
+         declared using let and const variable but if it is declared using var variable we can access the value
+         the process to no access the variable is called temporal zone
+  
+*/
