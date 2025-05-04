@@ -49,3 +49,38 @@ console.log(obj2.fetchcolor)
 obj2.walk();
 
 
+// default parameter
+function solvenow(value = ["Ayesha", "hafsa" , "tahira" , 'fiza']){
+    console.log("hello" ,value);
+}
+solvenow();
+
+
+function saymyname(fname= "Ayesha" , lname= fname.toUpperCase()){
+    console.log("my name is :", fname , " "  , lname)
+}
+saymyname()
+
+
+// null or undefined
+/*
+  if we call function give value null it will print null
+  but if we give undefined it will ignore it and show the default value
+*/
+
+function solveprblm(value = "ayesha"){
+    console.log("value:" , value)
+}
+solveprblm(null);
+solveprblm(undefined)
+
+
+// as function
+
+function ourage (){
+    return 19;
+}
+function utililt(name ="ayesha" , age=  ourage()){
+    console.log(name, " ", age)
+}
+utililt()
