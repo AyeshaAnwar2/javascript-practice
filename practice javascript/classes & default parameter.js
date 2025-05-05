@@ -18,10 +18,6 @@ class Human {
         this.height= newheight;
         this.#color = newcolor;
     }
-    
-
-   
-   
     // functionalities
 
     walk(){
