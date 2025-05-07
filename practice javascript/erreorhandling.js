@@ -16,22 +16,22 @@ console.log(1;    */
 
 // try catch finally
 
-try{
-    console.log(data)
-}
-catch(error){
-    throw new Error("first declare then run")
-    console.log("catch block starts")
-    console.log("your error is " ,error)
-}
-finally{
-    console.log("it will definetely run no matter error occur or not")
-}
+// try{
+//     console.log(data)
+// }
+// catch(error){
+//     throw new Error("first declare then run")
+//     console.log("catch block starts")
+//     console.log("your error is " ,error)
+// }
+// finally{
+//     console.log("it will definetely run no matter error occur or not")
+// }
 
 // throw your error
 
-let errorcode = 100;
-if (errorcode = 100){
-    throw new Error("invalid json")
-}
+// let errorcode = 100;
+// if (errorcode = 100){
+//     throw new Error("invalid json")
+// }
 
