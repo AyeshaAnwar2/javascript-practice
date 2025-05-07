@@ -32,5 +32,6 @@ finally{
 
 let errorcode = 100;
 if (errorcode = 100){
-    throw new Errorrr("invalid json")
+    throw new Error("invalid json")
 }
+
