@@ -44,7 +44,9 @@ we click is called event target and what happen after the click is called action
 function checkchange(){
     let heading = document.getElementById('events');
     heading.textContent = " happy birthday fakiha"
+    heading.style.backgroundColor = "pink";
  }
+ 
 
 let heading = document.getElementById('events');
 
