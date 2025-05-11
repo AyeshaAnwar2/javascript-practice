@@ -6,7 +6,6 @@ let firstclass = document.getElementById('1para')
 function changecolor(){
     let firstclass = document.getElementById('1para')
     firstclass.style.backgroundColor = "pink";
-    firstclass.style.Color = "yellow";
 }
 
 firstclass.addEventListener('click' , changecolor)
