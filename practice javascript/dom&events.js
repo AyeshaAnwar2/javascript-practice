@@ -1,7 +1,15 @@
 
 // //    we can use .style to set and get the single property of thh code
 let firstclass = document.getElementById('1para')
-firstclass.style.backgroundColor = "pink";
+
+// it will change its color when clicked
+function changecolor(){
+    let firstclass = document.getElementById('1para')
+    firstclass.style.backgroundColor = "pink";
+    firstclass.style.Color = "yellow";
+}
+
+firstclass.addEventListener('click' , changecolor)
 
 
 // //    style.cssText is used to get or set t he multiple porperties at a time like background color,color,margin etc
@@ -45,7 +53,6 @@ heading.addEventListener('click' , checkchange);
 // heading.removeEventListener('click' , checkchange)
 
 
-
 /* phases of events
 
 1: capturing phase is the phasse to reach at the target place for example inside the parent element
@@ -53,3 +60,15 @@ heading.addEventListener('click' , checkchange);
 3: bubbling phase is the phase to go back to the parent
 */
 
+
+// add alert para to whole div
+
+function alertpara(event){
+
+    // condition when to use alert element
+    if(event.target.nodeName === 'SPAN')
+    alert("you have clicked on para  " + event.target.textContent)
+}
+
+let mydiv = document.getElementById("wrapper");
+mydiv.addEventListener('click' , alertpara)
