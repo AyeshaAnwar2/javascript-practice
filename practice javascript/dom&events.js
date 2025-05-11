@@ -36,10 +36,20 @@ we click is called event target and what happen after the click is called action
 
 function checkchange(){
     let heading = document.getElementById('events');
-    heading.textContent = " hello Ayesha"
+    heading.textContent = " happy birthday fakiha"
  }
 
 let heading = document.getElementById('events');
 
 heading.addEventListener('click' , checkchange);
 // heading.removeEventListener('click' , checkchange)
+
+
+
+/* phases of events
+
+1: capturing phase is the phasse to reach at the target place for example inside the parent element
+2: At range phaes is the phase when you finally reach at the target
+3: bubbling phase is the phase to go back to the parent
+*/
+
