@@ -6,7 +6,19 @@ let firstclass = document.getElementById('1para')
 function changecolor(){
     let firstclass = document.getElementById('1para')
     firstclass.style.backgroundColor = "pink";
-}
+    firstclass.textContent = " happy birthday fakiha"
+
+
+    // let heading = document.getElementById('events');
+    // heading.textContent = " happy birthday fakiha"
+    // heading.style.backgroundColor = "pink";
+ }
+ 
+
+// let heading = document.getElementById('events');
+
+// heading.addEventListener('click' , checkchange);
+// }
 
 firstclass.addEventListener('click' , changecolor)
 
