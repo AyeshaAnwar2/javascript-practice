@@ -8,7 +8,21 @@
  callback queu hold complete astcn tasks waiting to be pushed into the call stack
  event loop check is the call stack empty then it pushed the next callback from queu into the call stack
 
+
+ syntax :  setTimeout(() =>{
+    console.log("Async");
+    }, 1000);
  */
 
 
 
+// promises is the object which handle the returnig value and completion of asyncrouns code
+// syntax : let firstpromise = new promise((resolve, reject) =>{
+// ......function............})
+
+let firstpromise = new Promise((resolve , reject) =>{
+
+    setTimeout(function saymyName(){
+    console.log("my name is Ayesha Anwar");
+}, 15000);
+})
