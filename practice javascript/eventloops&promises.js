@@ -30,6 +30,7 @@ let firstpromise = new Promise((resolve , reject) =>{
 
 // then and catch are used in promise if its true
 // use then when resolve , catch when rejected
+// we can finnaly it will run in every situtaion
 
 let mypromise = new Promise((resolve , reject)=>{
   let success =true ;
