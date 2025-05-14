@@ -20,12 +20,38 @@
 // syntax : let firstpromise = new promise((resolve, reject) =>{
 // ......function............})
 
+let firstpromise = new Promise((resolve , reject) =>{
+
+    setTimeout(function saymyName(){
+    console.log("my name is Ayesha Anwar");
+}, 15000);
+   resolve("fulfilled")
+})
+
+// then and catch are used in promise if its true
+// use then when resolve , catch when rejected
+
+let mypromise = new Promise((resolve , reject)=>{
+  let success =true ;
+  if (success)(
+    resolve("promise fulfilled")
+  )
+  else{
+    reject("pormise rejected")
+  }
+});
+
+mypromise.then((message)=>{
+    console.log("message of then" +message);
+})
+mypromise.catch((error)=>{
+    console.log("Error:" +error);
+})
 
 
-// we can use promise.all to print multiple promis
-
-let promise1 = new Promise((resolve, reject)=>{
-    setTimeout(resolve, 1000 , "first");
+// we can use promise.all to print multiple promise
+let promise1 = new Promise((resolve , reject)=>{
+    setTimeout(resolve , 1000 , "first");
 })
 
 let promise2 = new Promise((resolve , reject)=>{
