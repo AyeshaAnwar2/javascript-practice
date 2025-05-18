@@ -9,5 +9,18 @@ async function getdata(){
 
 getdata()
 
+// async await function always return promise
 
 
+// closure is combination of function and its required data (lexical scope)
+
+function outerfunction(){
+     let name = "Ayesha";
+
+     function innerfunction(){
+        console.log(name);
+     }
+        return innerfunction;
+}
+let inner = outerfunction();
+inner();
